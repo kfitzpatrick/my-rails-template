@@ -47,3 +47,20 @@ git :init
 git :add => "."
 git :commit => "-a -m 'Initial commit'"
 
+# TODO
+# Get rid of prototype
+# Install jQuery
+# make an application.js with the basic stuff I want
+# install jasmine 
+# one basic cucumber feature
+# one javascript cucumber feature
+# nifty layout
+# one scaffolded resource with tests
+# devise stuff
+# log in/out links in the layout
+# put the Foo resource behind the login screen
+# route the resource
+# hamlize the layouts
+# remove the erb files
+# install sass
+# sassify the css
