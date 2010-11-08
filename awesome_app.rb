@@ -22,19 +22,15 @@ file 'Gemfile', <<-END
   gem "rails", "2.3.8"
   gem "sqlite3-ruby", :require => "sqlite3"
 
-  # bundler requires these gems in all environments
-  # gem "nokogiri", "1.4.2"
-  # gem "geokit"
-
   group :development do
-    # bundler requires these gems in development
-    # gem "rails-footnotes"
   end
 
   group :test do
-    # bundler requires these gems while running tests
-    # gem "rspec"
-    # gem "faker"
+    gem "rspec", "> 1.3", "< 2.0"
+    gem "rspec-rails", "> 1.3", "< 2.0"
+    gem "capybara", "0.4.0"
+    gem "cucumber-rails", "0.3.2"
+    gem "database_cleaner", "0.5.2"
   end
 END
 
