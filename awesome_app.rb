@@ -34,10 +34,14 @@ file 'Gemfile', <<-END
   end
 END
 
-log run "bundle install"
+log run "bundle"
+
+generate "cucumber"
+generate "rspec"
 
 rake "db:migrate"
-rake "default"
+rake "cucumber"
+rake "spec"
 
 git :init
 git :add => "."
