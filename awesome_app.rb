@@ -13,7 +13,9 @@ config/database.yml
 db/*.sqlite3
 END
 
-log run "gem install bundler -v=1.0.2"
+unless (run "gem list bundler").include?("1.0.2")
+  run "gem install bundler -v=1.0.2"
+end
 
 file 'Gemfile', <<-END
   source :gemcutter
