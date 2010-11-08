@@ -1,5 +1,17 @@
-run "rm README"
-run "rm public/index.html"
+files_to_delete = [
+  "README",
+  "public/index.html",
+  "public/images/rails.png", 
+  "public/javascripts/prototype.js",
+  "public/javascripts/effects.js",
+  "public/javascripts/dragdrop.js",
+  "public/javascripts/controls.js",
+  "public/javascripts/application.js",
+  "test/performance/browsing_test.rb"
+]
+
+log run "rm #{files_to_delete.join(' ')}"
+
 run "rm -rf test"
 
 run "cp config/database.yml config/database.yml.example"
