@@ -1,0 +1,3 @@
+To use:
+
+    rails my_awesome_app -m https://github.com/kfitzpatrick/my-rails-template/raw/master/awesome_app.rb
