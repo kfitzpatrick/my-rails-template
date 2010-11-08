@@ -1,5 +1,7 @@
 
+run "rm README"
 run "rm public/index.html"
+run "rm -rf test"
 
 run "cp config/database.yml config/database.yml.example"
 
